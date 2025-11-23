@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-htv*yo%&cc6gf6o#!s)=d7qhoo0-(oh3js85p1_u-r(y*d0=4t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -298,3 +298,4 @@ def dashboard_callback(request, context):
     Callback to provide additional context for the dashboard
     """
     return context
+
