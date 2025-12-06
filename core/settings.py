@@ -18,6 +18,11 @@ from django.urls import reverse_lazy
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://halls-production.up.railway.app',
+]
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -298,4 +303,5 @@ def dashboard_callback(request, context):
     Callback to provide additional context for the dashboard
     """
     return context
+
 
